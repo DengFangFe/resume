@@ -1,0 +1,97 @@
+/* Code tidied up by ScrapBook */
+
+.swiper-container {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    transition-timing-function: ease;
+    transition-duration: 0s;
+    transition-property: transform, left, top;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.swiper-free-mode > .swiper-wrapper {
+    margin: 0 auto;
+    transition-timing-function: ease-out;
+}
+
+.swiper-slide {
+    float: left;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    height: 100%;
+}
+
+.swiper-slide {
+    height: 100%;
+    text-align: center;
+}
+
+.swiper-slide img {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: 0 auto;
+    transition: all 300ms ease 0s;
+    transform: scale(.9);
+    vertical-align: middle;
+    opacity: .3;
+    border: 5px solid rgb(34, 34, 34);
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    backface-visibility: hidden;
+}
+
+.swiper-slide-active img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.swiper-slide .inner {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 35px 20px 20px 35px;
+}
+
+.pagination {
+    display: none;
+}
+
+.swiper-container .fa-angle-left,
+.swiper-container .fa-angle-right {
+    font-size: 52px;
+    position: absolute;
+    z-index: 99;
+    top: 45%;
+    color: rgba(255, 255, 255, .5);
+}
+
+.swiper-container .fa-angle-left:hover,
+.swiper-container .fa-angle-right:hover {
+    color: rgb(255, 255, 255);
+}
+
+.swiper-container .fa-angle-left {
+    left: 5px;
+}
+
+.swiper-container .fa-angle-right {
+    right: 5px;
+}

@@ -1,13 +1,605 @@
 <!DOCTYPE html>
-<html>
+<html class="mouse">
+
 <head>
-    <meta charset="utf-8">
-	<title>首页</title>
-	<link rel="stylesheet" type="text/css" href="asset/style/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Demi WebSite</title>
+    <link rel="stylesheet" href="asset/css/default.css">
+    <link rel="stylesheet" href="asset/css/audio.css">
+    <link rel="stylesheet" href="asset/css/font_awesome.css">
+    <link rel="stylesheet" href="asset/css/idangerous_swiper.css">
+    <style>
+    .fullscreen,
+    .gohome {
+        display: none;
+    }
+    
+    .mslogo,
+    .mjslogo {
+        display: block;
+    }
+    </style>
 </head>
+
 <body>
-	<div class="box">
-		<img src="asset/img/github.png" width="289" height="256">
-	</div>
+    <div class="hand hidden_elem"></div>
+    <a class="fullscreen fa fa-arrows-alt" data-hover="tooltip" tooltip-position="left" original-title="Toggle Full Screen"></a>
+    <a class="gohome fa fa-home" data-hover="tooltip" tooltip-position="right" original-title="Go Home"></a>
+    <a class="mslogo" href="http://www.mohsensamiee.ir/" data-hover="tooltip" tooltip-position="right" target="_blank" original-title="Demi">Demi</a>
+    <a class="mjslogo" href="javascript:void;" data-hover="tooltip" tooltip-position="right" target="_blank" original-title="Demi Website">Demi Website</a>
+    <div class="navbar">
+        <ul class="nav hide" data-page="loading">
+            <li class="here">
+                <a href="#char"><img src="asset/img/icon_char.png"></a>
+            </li>
+            <li>
+                <a href="#logo"><img src="asset/img/icon_logo.png"></a>
+            </li>
+            <li>
+                <a href="#ui"><img src="asset/img/icon_ui.png"></a>
+            </li>
+            <li>
+                <a href="#contact"><img src="asset/img/icon_contact.png"></a>
+            </li>
+            <li>
+                <a href="#about"><img src="asset/img/icon_about.png"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="page-item page-home">
+        <div class="home page">
+            <ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;" data-mode="cursor">
+                <li class="layer" data-depth="0.20" style="position: relative; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(4.74178%, 2.99367%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-black"></div>
+                </li>
+                <li class="layer" data-depth="0.18" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(4.26761%, 2.6943%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-blue"></div>
+                </li>
+                <li class="layer" data-depth="0.15" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(3.55634%, 2.24525%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-blue-right bubble-menu" data-page="logo">
+                        <h2>لوگو</h2></div>
+                </li>
+                <li class="layer" data-depth="0.18" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(4.26761%, 2.6943%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-green-right"></div>
+                </li>
+                <li class="layer" data-depth="0.25" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(5.92723%, 3.74209%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-green bubble-menu" data-page="char">
+                        <h2>کاراکتر</h2></div>
+                </li>
+                <li class="layer" data-depth="0.30" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(7.11268%, 4.49051%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-orange"></div>
+                </li>
+                <li class="layer" data-depth="0.16" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(3.79343%, 2.39494%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-orange-large bubble-menu" data-page="ui">
+                        <h2>رابط کاربری</h2></div>
+                </li>
+                <li class="layer" data-depth="0.19" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(4.50469%, 2.84399%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-red bubble-menu" data-page="contact">
+                        <h2>تماس</h2></div>
+                </li>
+                <li class="layer" data-depth="0.28" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(6.6385%, 4.19114%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-red-right"></div>
+                </li>
+                <li class="layer" data-depth="0.22" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(5.21596%, 3.29304%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-violet-large bubble-menu" data-page="about">
+                        <h2>درباره من</h2></div>
+                </li>
+                <li class="layer" data-depth="0.11" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(2.60798%, 1.64652%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-violet"></div>
+                </li>
+                <!-- Shadow -->
+                <li class="layer" data-depth="0.19" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(4.50469%, 2.84399%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-red-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.18" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(4.26761%, 2.6943%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-blue-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.25" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(5.92723%, 3.74209%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-green-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.22" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(5.21596%, 3.29304%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-violet-large-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.30" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(7.11268%, 4.49051%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-orange-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.20" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(4.74178%, 2.99367%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-black-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.16" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(3.79343%, 2.39494%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-orange-large-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.11" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(2.60798%, 1.64652%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-violet-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.28" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(6.6385%, 4.19114%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-red-right-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.15" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(3.55634%, 2.24525%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-blue-right-shadow"></div>
+                </li>
+                <li class="layer" data-depth="0.18" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; transform: translate3d(4.26761%, 2.6943%, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="bubble-green-right-shadow"></div>
+                </li>
+            </ul>
+            <div class="logomjs"></div>
+            <div class="avatar"></div>
+            <div class="stereo" title="Toggle Play Music">
+                <div class="speakerleft"></div>
+                <div class="speakerright"></div>
+                <ol class="music-list hidden_elem">
+                    <li><a href="#" data-src="asset/img/luck.mp3" title="small luck">small luck</a></li>
+                </ol>
+                <div class="audiojs " classname="audiojs" id="audiojs_wrapper0">
+                    <audio preload="auto" src="asset/img/luck.mp3"></audio>
+                    <div class="play-pause">
+                        <p class="play"></p>
+                        <p class="pause"></p>
+                        <p class="loading"></p>
+                        <p class="error"></p>
+                    </div>
+                    <div class="scrubber">
+                        <div class="progress" style="width: 0px;"></div>
+                        <div class="loaded" style="width: 0px;"></div>
+                    </div>
+                    <div class="time"> <em class="played">00:00</em>/<strong class="duration">01:54</strong> </div>
+                    <div class="error-message"></div>
+                </div>
+            </div>
+            <div class="stereo-shadow"></div>
+            <div class="type-container">
+                <div class="type-blue"></div>
+                <div class="type-green"></div>
+                <div class="type-orange"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-item page-char">
+        <div class="char page">
+            <div class="tablet">
+                <div class="padd">
+                    <div class="swiper-container swiper-container-char" style="cursor: grab;">
+                        <div class="pagination"></div>
+                        <div class="swiper-wrapper" style="width: 3635px; height: 544px;">
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 727px; height: 544px;">
+                                <div class="inner"><img alt="" src="asset/img/char_01.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 727px; height: 544px;">
+                                <div class="inner"><img alt="" src="asset/img/char_02.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 727px; height: 544px;">
+                                <div class="inner"><img alt="" src="asset/img/char_03.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 727px; height: 544px;">
+                                <div class="inner"><img alt="" src="asset/img/char_04.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 727px; height: 544px;">
+                                <div class="inner"><img alt="" src="asset/img/char_05.jpg"></div>
+                            </div>
+                        </div>
+                        <a class="fa fa-angle-left" href="#"></a>
+                        <a class="fa fa-angle-right" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-item page-ui">
+        <div class="ui page">
+            <div class="display">
+                <div class="padd">
+                    <div class="swiper-container swiper-container-ui" style="cursor: grab;">
+                        <div class="pagination"></div>
+                        <div class="swiper-wrapper" style="width: 4250px; height: 533px;">
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 850px; height: 533px;">
+                                <div class="inner"><img alt="" src="asset/img/ui_01.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 850px; height: 533px;">
+                                <div class="inner"><img alt="" src="asset/img/ui_02.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 850px; height: 533px;">
+                                <div class="inner"><img alt="" src="asset/img/ui_03.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 850px; height: 533px;">
+                                <div class="inner"><img alt="" src="asset/img/ui_04.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 850px; height: 533px;">
+                                <div class="inner"><img alt="" src="asset/img/ui_05.jpg"></div>
+                            </div>
+                        </div>
+                        <a class="fa fa-angle-left" href="#"></a>
+                        <a class="fa fa-angle-right" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-item page-logo">
+        <div class="logo page">
+            <div class="laptop">
+                <div class="padd">
+                    <div class="swiper-container swiper-container-logo" style="cursor: grab;">
+                        <div class="pagination"></div>
+                        <div class="swiper-wrapper" style="width: 4140px; height: 510px;">
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 828px; height: 510px;">
+                                <div class="inner"><img alt="" src="asset/img/logo_01.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 828px; height: 510px;">
+                                <div class="inner"><img alt="" src="asset/img/logo_02.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 828px; height: 510px;">
+                                <div class="inner"><img alt="" src="asset/img/logo_03.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 828px; height: 510px;">
+                                <div class="inner"><img alt="" src="asset/img/logo_04.jpg"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 828px; height: 510px;">
+                                <div class="inner"><img alt="" src="asset/img/logo_05.jpg"></div>
+                            </div>
+                        </div>
+                        <a class="fa fa-angle-left" href="#"></a>
+                        <a class="fa fa-angle-right" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-item page-contact">
+        <div class="contact page">
+            <div class="mobile">
+                <div class="screen">
+                    <a href="https://www.facebook.com/mohammadj.samiee" class="icon fb"><i class="fa fa-facebook"></i></a>
+                    <a href="https://plus.google.com/117687851436396734078" class="icon gp"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://twitter.com/mohammadjsamiee" class="icon tw"><i class="fa fa-twitter"></i></a>
+                    <a href="http://instagram.com/mohammadjsamiee" class="icon ins"><i class="fa fa-instagram"></i></a>
+                    <div class="pin1">
+                        <div class="pin" data-hover="tooltip" tooltip-position="right"></div>
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="pin2">
+                        <div class="pin" data-hover="tooltip" tooltip-position="right"></div>
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="pin3">
+                        <div class="pin" data-hover="tooltip" tooltip-position="right"></div>
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="pin4">
+                        <div class="pin" data-hover="tooltip" tooltip-position="right"></div>
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="pin5">
+                        <div class="pin" data-hover="tooltip" tooltip-position="right"></div>
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="pin6">
+                        <div class="pin" data-hover="tooltip" tooltip-position="right"></div>
+                        <div class="pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-item page-about">
+        <div class="about page">
+            <div class="aboutme ui-draggable">
+                <p>
+                    <strong></strong>
+                    <br> 123
+                    <br> 1234 ..
+                    <br> 12345 <span dir="ltr">;)</span>
+                    <img alt="" style="margin-top: 10px;" src="asset/img/adobe_ai.jpg" width="20%">
+                    <img alt="" style="margin-top: 10px;" src="asset/img/adobe_ps.jpg" width="20%">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="loading" class="page-item page-cover">
+        <div class="cover page cover-opacity">
+            <div class="select-screen clearfix" style="left: 490px; top: 345px; display: block;">
+                <a href="#" class="screen-normal"></a>
+                <a href="#" class="screen-full"></a>
+            </div>
+            <div class="loading" style="display: none;">
+                <div class="cir-yellow">
+                    <p>100%</p>
+                </div>
+                <div class="cir-blue">
+                    <div>
+                        <div class="date-month">Jun</div>
+                        <div class="date-day">26</div>
+                        <div class="date-year">2017</div>
+                    </div>
+                </div>
+                <div class="cir-red">
+                    <div class="time">
+                        <span class="timeHours">15</span>:<span class="timeMin">46</span>
+                    </div>
+                </div>
+                <div class="cir-pink">
+                    <div class="clock-logo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script type="text/javascript" src="asset/js/jquery.min.js"></script>
+<script type="text/javascript" src="asset/js/ga.js"></script>
+<script type="text/javascript" src="asset/js/jquery-ui-init-1.9.2.js"></script>
+<script type="text/javascript" src="asset/js/jquery-ui-draggable-1.9.2.js"></script>
+<script type="text/javascript" src="asset/js/jquery-ui-droppable-1.9.2.js"></script>
+<script type="text/javascript" src="asset/js/jquery-scrollto-1.4.6.min.js"></script>
+<script type="text/javascript" src="asset/js/audiojs.js"></script>
+<script type="text/javascript" src="asset/js/jquery-queryloader-2.8.1.js"></script>
+<script type="text/javascript" src="asset/js/jquery-idangerous.swiper-2.4.1.min.js"></script>
+<script type="text/javascript" src="asset/js/jquery-fullscreen-1.1.5.min.js"></script>
+<script type="text/javascript" src="asset/js/jquery-easing-1.3.min.js"></script>
+<script type="text/javascript" src="asset/js/jquery-tipsy-1.0.js"></script>
+
+<script type="text/javascript">
+    // iOS devices
+window.addEventListener("DOMContentLoaded", function() {
+    $("body").queryLoader2({
+        barColor: "#6e6d73",
+        backgroundColor: "#FFF1B0",
+        percentage: true,
+        barHeight: 30,
+        completeAnimation: "grow",
+        onComplete: function() {
+            $(".loading").fadeOut();
+            $(".cover").addClass("cover-opacity");
+            var w = $(window).width();
+            var h = $(window).height();
+            $(".select-screen").css({
+                left: ((w - $(".select-screen").width()) / 2),
+                top: ((h - $(".select-screen").height()) / 2)
+            });
+            $(".select-screen").fadeIn();
+        }
+    });
+});
+
+// document
+$(document).ready(function() {
+    // Query Loader
+    $("body").queryLoader2({
+        barColor: "#6e6d73",
+        backgroundColor: "#FFF1B0",
+        percentage: true,
+        barHeight: 30,
+        completeAnimation: "grow",
+        onComplete: function() {
+            $(".loading").fadeOut();
+            $(".cover").addClass("cover-opacity");
+            var w = $(window).width();
+            var h = $(window).height();
+            $(".select-screen").css({
+                left: ((w - $(".select-screen").width()) / 2),
+                top: ((h - $(".select-screen").height()) / 2)
+            });
+            $(".select-screen").fadeIn();
+        }
+    });
+    $(window).resize(function(e) {
+        var w = $(window).width();
+        var h = $(window).height();
+        $(".select-screen").css({
+            left: ((w - $(".select-screen").width()) / 2),
+            top: ((h - $(".select-screen").height()) / 2)
+        });
+        $(".select-screen").fadeIn();
+    });
+    $(".screen-normal").click(function(e) {
+        $(".fullscreen").fadeIn();
+        $(".page-cover").fadeOut();
+        showpage("home");
+        e.preventDefault();
+    });
+    $(".screen-full").click(function(e) {
+        $(".fullscreen").fadeIn();
+        $(".page-cover").fadeOut();
+        showpage("home");
+        $(document).toggleFullScreen();
+        e.preventDefault();
+    });
+    // Loading Clock
+    var newDate = new Date();
+    newDate.setDate(newDate.getDate());
+    setInterval(function() {
+        var minutes = new Date().getMinutes();
+        var hours = new Date().getHours();
+        $(".timeMin").html((minutes < 10 ? "0" : "") + minutes);
+        $(".timeHours").html((hours < 10 ? "0" : "") + hours);
+    }, 1000);
+    // Tooltip
+    $("[data-hover='tooltip']").tipsy();
+    // Side Icons
+    $(".fullscreen").click(function(e) {
+        $(document).toggleFullScreen();
+        galleryreload();
+    });
+    $(".gohome").click(function(e) {
+        showpage("home")
+    });
+    // Show Page
+    var hideAll = false;
+
+    function showpage(page) {
+        var nav = $(".nav");
+        if (page !== nav.data("page")) {
+            if (!hideAll) {
+                $(".page-item:not(page-home)").hide();
+                hideAll = true;
+            }
+            $(".nav a").each(function() {
+                if (page == $(this).attr("href").replace("#", "")) {
+                    $(".nav a").parent().removeClass("here");
+                    $(this).parent().addClass("here");
+                }
+            });
+            $(".page-" + nav.data("page")).fadeOut("slow");
+            if (page == "home") {
+                $(".nav").addClass("hide");
+                $(".gohome").fadeOut();
+            } else {
+                $(".nav").removeClass("hide");
+                $(".gohome").fadeIn();
+                galleryreload(page);
+            }
+            $(".page-" + page).fadeIn("slow");
+            nav.data("page", page);
+            $("body").queue([]).stop().scrollTo(0, 1500, {
+                easing: "easeOutBack"
+            });
+        }
+    }
+    // Bubble Menu Hover
+    $(document).mousemove(function(e) {
+        var x = e.clientX + $(this).scrollLeft();
+        var y = e.clientY + $(this).scrollTop();
+        //$(".hand").offset({left: x + 3, top: y});
+        $(".bubble-menu.hover").removeClass("hover");
+        $(".bubble-menu").each(function() {
+            var bubble = $(this);
+            var top = bubble.offset().top;
+            var left = bubble.offset().left;
+            var w = bubble.width();
+            var h = bubble.height();
+            if ((x >= left && y >= top) && (x <= (left + w) && y <= (top + h)) && !bubble.hasClass("bubble-here")) {
+                $('[class^="bubble-"]').each(function() {
+                    $(this).removeClass("hover");
+                });
+                bubble.addClass("hover");
+            }
+        });
+    });
+    // Bubble Menu
+    $(".home").click(function(e) {
+        var x = e.clientX + $(document).scrollLeft();
+        var y = e.clientY + $(document).scrollTop();
+        $(".bubble-menu").each(function() {
+            var bubble = $(this);
+            var page = bubble.data("page");
+            var top = bubble.offset().top;
+            var left = bubble.offset().left;
+            var w = bubble.width();
+            var h = bubble.height();
+            if ((x >= left && y >= top) && (x <= (left + w) && y <= (top + h)) && !bubble.hasClass("bubble-here")) {
+                showpage(page);
+            }
+        });
+    });
+    // Nav
+    $(".nav a").click(function(e) {
+        var page = $(this).attr("href").replace("#", "");
+        showpage(page);
+        e.preventDefault();
+    });
+    // Player
+    var a = audiojs.createAll({
+        playPause: function() {},
+        play: function() {
+            $(".stereo").addClass("speakerpulsate");
+            $(".avatar").addClass("dance");
+        },
+        pause: function() {
+            $(".stereo").removeClass("speakerpulsate");
+            $(".avatar").removeClass("dance");
+        }
+    });
+    var audio = a[0];
+    first = $(".music-list a").attr("data-src");
+    audio.load(first);
+    audio.setVolume(1);
+    $(".stereo").click(function(e) {
+        audio.playPause()
+    });
+    // Swiper
+    var gallerychar = $(".swiper-container-char").swiper({
+        centeredSlides: true,
+        grabCursor: true,
+    });
+    $(".swiper-container-char .fa-angle-left").click(function(e) {
+        gallerychar.swipePrev();
+        e.preventDefault();
+    });
+    $(".swiper-container-char .fa-angle-right").click(function(e) {
+        gallerychar.swipeNext();
+        e.preventDefault();
+    });
+    var galleryui = $(".swiper-container-ui").swiper({
+        centeredSlides: true,
+        grabCursor: true
+    });
+    $(".swiper-container-ui .fa-angle-left").click(function(e) {
+        galleryui.swipePrev();
+        e.preventDefault();
+    });
+    $(".swiper-container-ui .fa-angle-right").click(function(e) {
+        galleryui.swipeNext();
+        e.preventDefault();
+    });
+    var gallerylogo = $(".swiper-container-logo").swiper({
+        centeredSlides: true,
+        grabCursor: true
+    });
+    $(".swiper-container-logo .fa-angle-left").click(function(e) {
+        gallerylogo.swipePrev();
+        e.preventDefault();
+    });
+    $(".swiper-container-logo .fa-angle-right").click(function(e) {
+        gallerylogo.swipeNext();
+        e.preventDefault();
+    });
+
+    function galleryreload(page) {
+        if (page == "char" || page == "") {
+            gallerychar = $(".swiper-container-char").swiper({
+                centeredSlides: true,
+                grabCursor: true,
+            });
+        }
+        if (page == "ui" || page == "") {
+            galleryui = $(".swiper-container-ui").swiper({
+                centeredSlides: true,
+                grabCursor: true
+            });
+        }
+        if (page == "logo" || page == "") {
+            gallerylogo = $(".swiper-container-logo").swiper({
+                centeredSlides: true,
+                grabCursor: true
+            });
+        }
+    }
+    $(window).resize(function() {
+        gallerychar.resizeFix(true);
+        galleryui.resizeFix(true);
+        gallerylogo.resizeFix(true);
+    });
+    // About me
+    $(".aboutme").draggable({
+        revert: "invalid",
+        cursor: "move",
+        opacity: 0.7
+    });
+    // Move Screen
+    //$("body").moveScreen({speed: 2000, ratio: 2, easing: 'easeOutBack'});
+});
+
+// Parallax
+var $html = $("html"),
+    $container = $("#container"),
+    $scene = $("#scene");
+// if (Hammer.HAS_TOUCHEVENTS) {
+//     $container.hammer({
+//         drag_lock_to_axis: true
+//     })
+// }
+// $html.addClass(Hammer.HAS_TOUCHEVENTS ? "touch" : "mouse");
+// $scene.parallax();
+
+</script>
 </html>
