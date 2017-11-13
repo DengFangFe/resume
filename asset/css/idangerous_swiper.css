@@ -95,3 +95,11 @@
 .swiper-container .fa-angle-right {
     right: 5px;
 }
+
+.swiper-container-wx .swiper-slide-active img{
+   transform: scale(0.9); 
+   border: none; 
+   box-shadow: none;
+   border-radius: 5px;
+   height: 87%; 
+}

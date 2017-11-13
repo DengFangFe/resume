@@ -1284,12 +1284,12 @@ form {
 
 .about {
     position: relative;
-    background: rgba(0, 0, 0, 0) url('../img/bg_about.jpg') no-repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url('../img/bg.jpg') no-repeat scroll 0 0 / cover;
 }
 
 .aboutme {
     position: absolute;
-    background: rgba(0, 0, 0, 0) url('../img/bubble_me.png') no-repeat scroll 100% 100% / cover;
+    /*background: rgba(0, 0, 0, 0) url('../img/bg.jpg') no-repeat scroll 100% 100% / cover;*/
 }
 
 .aboutme p {
@@ -1484,27 +1484,27 @@ form {
 }
 
 .bubble-green h2 {
-    font-size: 350%;
+    font-size: 50%;
     padding-top: 66%;
 }
 
 .bubble-blue-right h2 {
-    font-size: 230%;
+    font-size: 30%;
     padding-top: 62%;
 }
 
 .bubble-violet-large h2 {
-    font-size: 350%;
-    padding-top: 65%;
+    font-size: 200%;
+    padding-top: 85%;
 }
 
 .bubble-red h2 {
-    font-size: 255%;
+    font-size: 30%;
     padding-top: 60%;
 }
 
 .bubble-orange-large h2 {
-    font-size: 220%;
+    font-size: 20%;
     padding-top: 65%;
 }
 

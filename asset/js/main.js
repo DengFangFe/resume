@@ -213,6 +213,20 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+
+    var gallerywx = $(".swiper-container-wx").swiper({
+        centeredSlides: true,
+        grabCursor: true
+    });
+    $(".swiper-container-wx .fa-angle-left").click(function(e) {
+        gallerylogo.swipePrev();
+        e.preventDefault();
+    });
+    $(".swiper-container-wx .fa-angle-right").click(function(e) {
+        gallerylogo.swipeNext();
+        e.preventDefault();
+    });
+
     function galleryreload(page) {
         if (page == "char" || page == "") {
             gallerychar = $(".swiper-container-char").swiper({
